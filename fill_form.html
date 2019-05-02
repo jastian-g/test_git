@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Latihan</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="header">
+  <a id="logo" href="welcome.html">
+        <img src="https://www.delidded.com/logo.png" alt="Delidded.com Logo" height="36">
+    </a>
+
+    <!-- Using ul tag to hold menu links, which makes them easier to style. -->
+	<ul id="menu">
+		<li><a href="fill_form.html">Isi Form</a></li>
+		<li><a href="#">menu 2</a></li>
+		<li><a href="#">menu 3</a></li>
+	</ul>
+
+    <!-- 2nd menu that will be on the right side of the header -->
+	<ul id="menu-right">
+		<li><a href="/login/">Login</a></li>
+	</ul>
+
+</header>
+<div id="main">
+  <form action="success.html">
+
+  <fieldset>
+    <legend>Personal Information</legend>
+
+      <label for="full-name">Full Name</label>
+      <input id="full-name" name="fullName" type="text">
+
+    <p>
+      <label for="email">Email Address</label>
+      <input id="email" name="email" type="email">
+    </p>
+    <p>
+      <label for="pass">Password anda</label>
+      <input id="pass" name="pass" type="password">
+    </p>
+    <p>
+      <label for="almt">Alamat</label>
+      <textarea id="almt" name="almt" rows="4" ></textarea>
+    </p>
+    <p>
+      <label>File attch</label>
+      <input type="file">
+      <input type="range">
+    </p>
+  </fieldset>
+
+
+  <fieldset>
+    <legend>Work Information</legend>
+    <!-- some other inputs -->
+    <input type="text" name="programming" list="programmingLangs" />
+    <datalist id="programmingLangs">
+      <select name="altProgrammingLangs">
+        <option value="javascript">JavaScript</option>
+        <option value="java">Java</option>
+        <option value="ruby">Ruby</option>
+        <option value="python">Python</option>
+      </select>
+    </datalist>
+
+    <select name="hobi">
+        <option value="1">renang</option>
+        <option value="2">basket</option>
+        <option value="3">bola</option>
+        <option value="4">jalan jalan</option>
+      </select>
+
+    <label for="gender">Gender:</label>
+  <input id="male-radio" type="radio" name="gender" value="male">
+  <label for="male-radio">Male</label>
+  <input id="female-radio" type="radio" name="gender" value="female">
+  <label for="female-radio">Female</label>
+  <br>
+
+  <label for="skill">Skill:</label>
+  <input id="writing-checkbox" type="checkbox" name="skill" value="writing">
+  <label for="writing-checkbox">Writing</label>
+  <input id="reading-checkbox" type="checkbox" name="skill" value="reading">
+  <label for="reading-checkbox">Reading</label>
+
+  </fieldset>
+  <input type="submit" value="OK">
+  <button type="reset">batal</button>
+
+
+
+</form>
+</div>
+</body>
+</html>
