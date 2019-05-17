@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+}
+
+#header {
+	background-color: #2DAACD;
+	height: 40px;
+}
+
+/* Add some space on each side of the logo */
+#logo {
+	margin-right: 20px;
+	margin-left: 10px;
+}
+
+/* Remove default border around images on some browsers */
+#logo img {
+	border: none;
+}
+
+/* Style both of the menus in the header */
+#header ul {
+	margin: 0;
+	padding: 0;
+
+    /* Allow the menu to sit next to the logo (instead of its own line) */
+	display: inline-block;
+
+    /* Align menus at the top of header,
+       so we can center the link text later. */
+	vertical-align: top;
+}
+
+/* Style the li tags holding the menu links */
+#header ul li {
+    /* Add some space to the right of each menu link */
+	margin-right: 20px;
+
+    /* Display menu items next to each other horizontally (instead of vertically) */
+	display: inline-block;
+
+    /* Make the line-height for the menu links the same height as #header,
+       which will center the text vertically. */
+	line-height: 40px;
+}
+
+/* Style all links in the header */
+#header a {
+	color: white;
+
+    /* Remove the default underline on links. */
+	text-decoration: none;
+}
+
+/* Add some space around the text in the main section */
+#main {
+	padding: 10px;
+}
+
+/* Move the Login menu to the right side of the header */
+#menu-right {
+    float: right;
+}
+
+
+/* Style our domain name */
+.domain {
+	color: green;
+	font-weight: bold;
+}
